@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+    <style>
+
+        /*
+        
+        #  = Id
+        .  = Class
+        :  = PseudoClass
+        :: = PseudoElementos
+        >  = Children 
+        
+        
+        */ 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: aqua;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        a::after {  /* Cria um elemento depois da âncora*/
+            content: ' [Link]';
+            color: cornflowerblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <code>
+        print('Olá Mundo!') <!--Lembrei de fazer isso do nada! kkk-->
+    </code>
+    <ul>
+
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do Curso em Vídeo</a></li>
+
+    </ul>
+</body>
+</html>

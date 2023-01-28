@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Família de fontes externas</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap'); /* Importando uma fonte do Google Fonts */
+
+        @font-face {
+        font-family: 'Love';
+        src: url(Fonts/Capture\ it.ttf) format('opentype'); 
+        /* Importando qualquet fonte baixada. */
+}
+
+        body {
+            font-family: 'Unbounded', cursive;
+            font-size: 1em;
+            color: black;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-family: 'Love', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore expedita consequuntur deleniti eum nulla omnis repudiandae rem officia minus eaque quae atque excepturi dolores ex, ducimus ipsam rerum non provident!</p>
+</body>
+</html>
