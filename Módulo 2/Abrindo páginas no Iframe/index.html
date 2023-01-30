@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 5px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abrindo páginas dentro do iframe</h1>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ratione eaque minus laborum, explicabo quidem quas sit quasi pariatur nam, harum itaque repellat dicta dolores repellendus ipsam rerum dolor quod. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores reiciendis impedit autem repellat nesciunt. Libero reprehenderit nihil non quis aliquam possimus aliquid ea nemo, nostrum vel. Assumenda nobis non incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, in nemo recusandae vitae officiis minus vero nihil facilis sint error facere eveniet porro esse possimus, voluptates deleniti, quam doloremque tempore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi saepe qui exercitationem molestiae et, quod, eum accusantium debitis, quos illo voluptas similique dolore reiciendis optio beatae provident eligendi officiis rem!</p>
+    
+    <ul>
+        <li><a href="Pagabrir/pag1.html" target="frame">Página 1</a></li>
+        <li><a href="Pagabrir/pag2.html" target="frame">Página 2</a></li>
+    </ul>
+
+    <iframe srcdoc="O que acontece se eu escrever qualquer coisa aqui? <img src = '../Imagens de fundo/imagens/pattern001.png'>" id="frame1" name="frame" frameborder="0"> Seu navegador não é compatível com esta função.</iframe>
+
+    <iframe src="" frameborder="0" sandbox="allow-forms allow-scripts" referrerpolicy="no-referer"></iframe> <!-- Torna o iframe mais seguro.-->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde libero labore fugit maxime repellendus rem deleniti architecto. Doloremque laborum eius voluptas, explicabo saepe rem ullam rerum nobis, aliquid sit optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit necessitatibus quod repellendus ut delectus, numquam ullam excepturi at, accusamus est temporibus, ad reprehenderit aliquam. Commodi nesciunt tempore asperiores nulla distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem distinctio, voluptatum obcaecati laudantium cupiditate corrupti voluptas, tempore facilis ea delectus voluptatibus perferendis quas quam sit odio nemo velit. Natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea recusandae, aperiam odit earum architecto illo nostrum veritatis officia deleniti doloremque culpa eveniet quam esse dolores vel laudantium, omnis optio cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa non repellat cum laudantium fuga vitae neque officia sequi harum hic. Deserunt, provident! Facere ipsa repellat voluptatum assumenda aliquam quibusdam vitae.</p>
+</body>
+</html>
