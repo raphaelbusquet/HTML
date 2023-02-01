@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <h1>Trabalhando com outputs.</h1>
+
+    <form action="cadastro.py">
+
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" value="5" min="1" max="10" oninput="outval.innerHTML = Number(inum.value)">
+            <output id="outval">5</output>
+        </p>
+
+    </form>
+</body>
+</html>

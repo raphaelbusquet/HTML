@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Outras funções dos formulários</h1>
+    <form action="cadastro.py" method="get" autocomplete="on">
+
+        <p>
+
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--Escolha--</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+               </optgroup>
+               <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernanbuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+               </optgroup>
+            </select>
+
+        </p>
+
+        <p>
+
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lista">
+            <datalist id="lista">
+                <option>Matemático</option>
+                <option>Programador</option>
+                <option>Não faço nada da vida</option>
+                <option>Programas</option>
+            </datalist>
+        </p>
+
+        <p>
+
+            <label for="itex">Sua mensagem:</label>
+            <textarea name="text" id="itex" cols="30" rows="10" placeholder="Sua mensagem aqui..." style="font: italic bold 20px arial, sans-serif;" ></textarea>
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+        <p><input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
