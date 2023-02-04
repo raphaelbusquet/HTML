@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    
+    grid-template-areas: 
+    "top top"
+    "conteudo adicionais"
+    "pe pe";
+
+    grid-template-rows: 60px 1fr 30px;
+    grid-template-columns: 1fr 40vw;
+}
+
+header {
+    grid-area: top;
+    background-color: rgba(41, 16, 208, 0.484);    
+}
+
+header > p {
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    grid-area: conteudo;
+    background-color: rgb(225, 13, 13);
+}
+
+aside {
+    grid-area: adicionais;
+    background-color: rgba(11, 197, 89, 0.775);
+    color: white;
+    
+}
+
+footer {
+    grid-area: pe;
+    background-color: rgba(255, 0, 251, 0.974);
+    color: white;
+}
